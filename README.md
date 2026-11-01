@@ -23,3 +23,13 @@ Bu proje, atletizm ve benzeri fiziksel performans gerektiren spor dallarındaki 
 ## GitHub Deposu
 
 https://github.com/ismailkirac/dis-sagligi-sporcu-performansi
+## UML Diyagramları
+
+### 1. Use Case Diyagramı
+![Use Case Diyagramı](use-case-diagram.png)
+
+### 2. Activity Diyagramı
+![Activity Diyagramı](activity-diagram.png)
+
+### 3. Class Diyagramı
+![Class Diyagramı](class-diagram.png)
