@@ -1,0 +1,23 @@
+@startuml
+left to right direction
+actor Sporcu
+actor "Diş Hekimi" as Hekim
+actor Araştırmacı
+rectangle "Diş Sağlığı ve Sporcu Performansı Takip Sistemi" {
+  usecase "Sporcu kaydı" as U1
+  usecase "Diş sağlığı anketi doldurma" as U2
+  usecase "Performans bilgisi girme" as U3
+  usecase "Diş sağlığı verilerini inceleme" as U4
+  usecase "Muayene sonucu girme" as U5
+  usecase "Araştırma sonuçlarını görüntüleme" as U6
+  usecase "Verileri karşılaştırma" as U7
+}
+Sporcu --> U1
+Sporcu --> U2
+Sporcu --> U3
+Sporcu --> U6
+Hekim --> U4
+Hekim --> U5
+Araştırmacı --> U6
+Araştırmacı --> U7
+@enduml

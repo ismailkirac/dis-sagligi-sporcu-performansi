@@ -1,0 +1,21 @@
+@startuml
+start
+:Sporcu sisteme kaydolur;
+:Sporcu bilgileri ve anket cevapları girilir;
+:Performans bilgileri girilir;
+if (Bilgiler eksiksiz mi?) then (Evet)
+  :Veriler kaydedilir;
+  :Diş sağlığı ve performans verileri incelenir;
+  if (Diş sağlığı sorunu var mı?) then (Evet)
+    :Diş sağlığı sorunu kaydedilir;
+  else (Hayır)
+    :Sorun olmadığı kaydedilir;
+  endif
+  :Veriler karşılaştırılır;
+  :Araştırma sonucu oluşturulur;
+else (Hayır)
+  :Eksik bilgiler tamamlanır;
+  :Bilgiler tekrar kontrol edilir;
+endif
+stop
+@enduml

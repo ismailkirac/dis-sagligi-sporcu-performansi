@@ -1,0 +1,40 @@
+@startuml
+class Sporcu {
+  - sporcuID: int
+  - adSoyad: String
+  - yas: int
+  - sporBransi: String
+  + bilgiGir()
+  + anketDoldur()
+}
+class DisSagligi {
+  - saglikID: int
+  - curukDurumu: String
+  - disEtiDurumu: String
+  - agriDurumu: Boolean
+  + saglikBilgisiKaydet()
+}
+class Performans {
+  - performansID: int
+  - antrenmanSuresi: double
+  - kosuSuresi: double
+  + performansKaydet()
+}
+class DisHekimi {
+  - hekimID: int
+  - adSoyad: String
+  + muayeneYap()
+  + sonucGir()
+}
+class Arastirma {
+  - arastirmaID: int
+  + verileriKarsilastir()
+  + sonucOlustur()
+}
+Sporcu "1" -- "1" DisSagligi
+Sporcu "1" -- "*" Performans
+DisHekimi "1" -- "*" DisSagligi
+Arastirma ..> Sporcu
+Arastirma ..> DisSagligi
+Arastirma ..> Performans
+@enduml
