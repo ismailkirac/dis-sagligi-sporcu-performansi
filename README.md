@@ -33,3 +33,9 @@ https://github.com/ismailkirac/dis-sagligi-sporcu-performansi
 
 ### 3. Class Diyagramı
 ![Class Diyagramı](class-diagram.png)
+
+![Use Case Diyagramı](use-case-diagram.png)
+
+![Activity Diyagramı](activity-diagram.png)
+
+![Class Diyagramı](class-diagram.png)
